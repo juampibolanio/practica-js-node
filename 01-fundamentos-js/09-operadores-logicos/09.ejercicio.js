@@ -16,3 +16,24 @@ Por favor usa bloques anidados de if. Piensa en la legibilidad general del códi
 Pista: si se le pasa una entrada vacía a un prompt, retorna una cadena de texto vacía ''. Presionando ESC durante un prompt retorna null.
  */
 
+let username;
+let password;
+
+username = prompt("Ingrese su rol: ", '');
+
+if (username == 'Admin') {
+    password = prompt("Ingrese su contraseña: ", '');
+
+    if (password == "TheMaster") {
+        alert("Bienvenido!");
+    } else if (password === null || password === '') {
+        alert("Cancelado");
+    } else {
+        alert("Contraseña incorrecta");
+    }
+} 
+else if (username === null || username === '') {
+    alert("Cancelado");
+} else {
+    alert("No te conozco");
+}
