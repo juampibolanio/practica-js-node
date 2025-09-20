@@ -121,3 +121,20 @@ alert(JSON.stringify(obj)); // {"a":1,"b":2,"c":3,"d":4}
 alert(JSON.stringify(objCopy)); // {"a":1,"b":2,"c":3}
 
 */
+
+/*
+Cuando veamos "..." en el código, son los parámetros rest o el operador spread.
+
+Hay una manera fácil de distinguir entre ellos:
+
+Cuando ... se encuentra al final de los parámetros de una función, son los “parámetros rest” y recogen el resto de la lista de argumentos en un array.
+Cuando ... está en el llamado de una función o similar, se llama “operador spread” y expande un array en una lista.
+Patrones de uso:
+
+Los parámetros rest son usados para crear funciones que acepten cualquier número de argumentos.
+El operador spread es usado para pasar un array a funciones que normalmente requieren una lista de muchos argumentos.
+Ambos ayudan a ir entre una lista y un array de parámetros con facilidad.
+
+Todos los argumentos de un llamado a una función están también disponibles en el “viejo” arguments: un objeto símil-array iterable.
+
+*/
