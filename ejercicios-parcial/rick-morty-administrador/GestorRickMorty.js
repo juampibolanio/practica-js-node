@@ -16,9 +16,9 @@ class GestorRickMorty {
     }
 
     async cargarPersonajes() {
-        
+
         try {
-            
+
             let response = await fetch("https://rickandmortyapi.com/api/character/?page=1");
 
             if (response.ok) {
@@ -38,20 +38,20 @@ class GestorRickMorty {
             } else {
                 console.error("Error HTTP: " + response.status);
             }
-        
+
         } catch (error) {
             console.error("Hubo un error al cargar los personajes." + error);
         }
-        
+
     }
 
     async cargarUbicaciones() {
         try {
-            
+
             let response = await fetch("https://rickandmortyapi.com/api/location/?page=1");
 
             if (response.ok) {
-                
+
                 let data = await response.json();
 
                 let ubicaciones = data.results.map(u => new Ubicacion(
@@ -105,11 +105,65 @@ class GestorRickMorty {
         this.#personajes.map((p) => {
 
             let ubicacion = this.#ubicaciones.find((u) => u.nombre.toLowerCase() === p.ubicacionActual.toLowerCase());
-            
+
             p.ubicacionActual = ubicacion;
             return p;
         })
+    }
 
+    actualizarEstadosAleatorios() {
+
+        let estados = ["Alive", "Dead", "Unknown"];
+        let personajesAActualizar = [];
+
+        setTimeout(() => {
+
+            for (let i = 0; i < 5; i++) {
+                let personaje = this.#personajes[Math.floor(Math.random() * this.#personajes.length)];
+                personajesAActualizar.push(personaje);
+            }
+
+            personajesAActualizar.forEach((p) => {
+            p.estado = this.indexAlAzar(estados);
+
+            console.log(`Estados de personajes actualizados`);
+            personajesAActualizar.forEach(p => console.log(`${p.nombre} -> ${p.estado}`));
+        });
+        }, 5000);
+    }
+
+    generarDesaparicion(personaje, ms) {
+
+        return new Promise(resolve => {
+            setTimeout(() => {
+                personaje.estado = "Desaparecido";
+                resolve(personaje);
+            }, ms);
+        })
+    }
+
+    async procesarDesapariciones() {
+
+        const resultados = await Promise.all([
+            this.generarDesaparicion(this.indexAlAzar(this.#personajes), 3000),
+            this.generarDesaparicion(this.indexAlAzar(this.#personajes), 6000),
+            this.generarDesaparicion(this.indexAlAzar(this.#personajes), 2000)
+        ])
+
+        console.log("Desapariciones realizadas: ", resultados.map(p => `${p.nombre} ${p.estado}`));
+    }
+
+    indexAlAzar(array) {
+        const index = Math.floor(Math.random() * array.length);
+        return array[index];
+    }
+
+    contadorPersonajesVivos() {
+        return () => {
+            let vivos = this.#personajes.filter(p => p.estado.toLowerCase() === "Alive").length;
+            console.log(`La cantidad de personajes vivos es de: ${vivos}`);
+            return vivos;
+        }
     }
 
 }
@@ -121,26 +175,41 @@ async function ejecutar() {
     await gestor.cargarUbicaciones();
 
     console.log("------------------------------");
-    
-    console.log(gestor.buscarPorNombre("Annie"));
-
-    console.log("---------------------------");
-    
-    console.log(gestor.filtrarPorEstado("Alive"));
-
-    console.log("---------------------------");
-
-    console.log(gestor.contarEspecies());
-
-    console.log("---------------------------");
 
     console.log(gestor.asignarUbicaciones());
     console.log(gestor.obtenerPersonajes());
+
+    console.log("---------------------------");
+
+    console.log(gestor.actualizarEstadosAleatorios());
+    console.log(gestor.obtenerPersonajes());
+
+    console.log("---------------------------");
+
+    console.log(await gestor.procesarDesapariciones());
+    console.log(gestor.obtenerPersonajes());
     
 
-    
+    const intervalID = setInterval(() => {
+        gestor.actualizarEstadosAleatorios()
 
-    
+        let personajes = gestor.obtenerPersonajes();
+
+        let contador = 0;
+        for (const personaje of personajes) {
+
+            if (!personaje.ubicacionActual && personaje.estado === "Alive") {
+                contador++;
+            }
+        }
+
+        if (contador > 10) {
+            console.warn("Hay más de 10 personajes vivos sin ubicacion asignada");
+            clearInterval(intervalID);
+        }
+
+    }, 5000);
+
 }
 
 ejecutar();

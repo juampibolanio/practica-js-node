@@ -50,6 +50,3 @@ Actualizar estados aleatorios de personajes.
 
 Mostrar un warning si hay más de 10 personajes "Alive" sin ubicación asignada: "⚠️ Muchos personajes vivos sin ubicación asignada".
 
-Comparaciones:
-
-Al buscar personajes por id, demostrar la diferencia entre == y === si la API devuelve id como number y vos recibís string.
