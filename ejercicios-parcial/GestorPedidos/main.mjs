@@ -21,6 +21,7 @@ const intervalId = setInterval(() => {
 
     try {
         gestor.agregarPedido(nuevoPedido);
+        nuevoPedido.actualizarEstado("enConsulta");
         gestor.asignarPedidos(["Carlos", "Sofía", "Ana"]);
         console.log(`Pedido agregado ${nuevoPedido.cliente}`);
     } catch (error) {

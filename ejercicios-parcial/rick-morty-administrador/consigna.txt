@@ -1,0 +1,55 @@
+1. Clases y prototipos
+
+Clase Personaje
+
+Propiedades: id, nombre, especie, estado ("Alive", "Dead", "unknown"), ubicacion.
+
+Método en el prototipo desaparecer() que cambie estado a "Desaparecido".
+
+Clase Ubicacion
+
+Propiedades: id, nombre, tipo, dimension.
+
+Método actualizarDimension(nuevaDimension).
+
+Clase de error personalizado EstadoInvalidoError
+
+Se lanza si alguien intenta asignar un estado no válido a un personaje.
+
+2. Gestor de datos
+
+Clase GestorRickMorty
+
+Propiedades privadas: #personajes, #ubicaciones.
+
+Métodos:
+
+cargarPersonajes() → usa fetch para traer personajes desde https://rickandmortyapi.com/api/character. Guardarlos como objetos Personaje.
+
+cargarUbicaciones() → usa fetch para traer ubicaciones desde https://rickandmortyapi.com/api/location. Guardarlos como objetos Ubicacion.
+
+buscarPorNombre(nombre) → devuelve personajes que coincidan con el nombre.
+
+filtrarPorEstado(estado) → devuelve personajes filtrados por su estado. Debe lanzar EstadoInvalidoError si el estado no es válido.
+
+contarEspecies() → devuelve un objeto con la cantidad de personajes por especie.
+
+asignarUbicaciones() → asigna a cada personaje la ubicación correspondiente según la API.
+
+actualizarEstadosAleatorios() → cada 5 segundos cambia aleatoriamente el estado de algunos personajes a "Alive", "Dead" o "unknown" usando timers.
+
+procesarDesapariciones() → usa Promise.all para cambiar el estado de personajes seleccionados a "Desaparecido" después de tiempos distintos (simulación de eventos paralelos).
+
+Closure: contadorPersonajesVivos() → devuelve una función que, cada vez que se llama, imprime la cantidad de personajes vivos.
+
+3. Simulación y consola
+
+Cada 5 segundos:
+
+Actualizar estados aleatorios de personajes.
+
+Mostrar un warning si hay más de 10 personajes "Alive" sin ubicación asignada: "⚠️ Muchos personajes vivos sin ubicación asignada".
+
+Comparaciones:
+
+Al buscar personajes por id, demostrar la diferencia entre == y === si la API devuelve id como number y vos recibís string.

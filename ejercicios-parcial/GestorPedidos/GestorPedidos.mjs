@@ -78,9 +78,35 @@ class GestorPedidos {
         ); 
     }
 
-    priorizarPedidos() {
+    priorizarPedidos(clientesVips, productosLentos) {
+        let alta = [];
+        let media = [];
+        let baja = [];
 
+        for (const pedido of this.#pedidos) {
+            
+            if (clientesVips.includes(pedido.cliente)) {
+                alta.push(pedido);
+            } 
+            else if (productosLentos.includes(pedido.producto)) {
+                media.push(pedido);
+            } 
+            else {
+                baja.push(pedido);
+            }
+        }
+
+        if (alta.length >= 2) {
+            console.log("Hay demasiados pedidos de alta prioridad, se va a suspender los pedidos de baja prioridad");
+            return [...alta, ...media];
+        }
+
+        return [...alta, ...media, ...baja];
         
+    }
+
+    totalPedidos() {
+        return this.#pedidos.length;
     }
 }
 
