@@ -5,7 +5,6 @@ class GestorBiblioteca {
     libros = [];
     usuarios = [];
 
-
     async cargarLibros() {
         try {
 
@@ -84,6 +83,15 @@ class GestorBiblioteca {
             return []
         }
         return librosEncontrados;
+    }
+
+    crearContadorPrestamos() {
+        let contador = 0;
+        return function () {
+            contador++;
+            console.log("Total de préstamos otorgados: ", contador);
+            return contador;
+        }
     }
 
     async registrarPrestamo(idLibro, idUsuario) {
@@ -189,7 +197,9 @@ class GestorBiblioteca {
 
 
 async function ejecutar() {
+    
     let gestor = new GestorBiblioteca();
+    const contarPrestamos = gestor.crearContadorPrestamos();
     await gestor.cargarLibros();
     await gestor.cargarUsuarios();
 
@@ -198,7 +208,7 @@ async function ejecutar() {
         console.log(actualizados);
         console.log("--------------------------------");
         console.log(gestor.contarLibrosPorEstado());
-
+        procesarPrestamos();
     }, 5000);
 
 
@@ -219,6 +229,11 @@ async function ejecutar() {
                     gestor.indexAlAzar(gestor.usuarios).id
                 )
             ]);
+            console.log("_--------------");
+            for (let i = 0; i < prestamos.length; i++) {
+                console.log(contarPrestamos())
+            };
+            console.log("_--------------");
 
             console.log("Préstamos procesados", prestamos);
             return prestamos;
