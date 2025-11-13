@@ -14,7 +14,7 @@ function errorHandler(err, req, res, next) {
     }
 
     // acá estan los errores de json invalido
-    if (err instanceof SyntaxError && err.staus == 400 && "body" in err) {
+    if (err instanceof SyntaxError && err.status == 400 && "body" in err) {
         return res.status(HttpStatus.BAD_REQUEST).json({
             error: "Error: El JSON tiene errores de formateo."
         });

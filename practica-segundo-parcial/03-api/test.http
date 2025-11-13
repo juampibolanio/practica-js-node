@@ -1,0 +1,30 @@
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name" : "Pasta de dientes",
+    "price" : 100,
+    "stock" : 500
+}
+
+###
+POST http://localhost:3000/api/cart/add
+Content-Type: application/json
+
+{
+    "id" : "d9215f90-e99f-44fe-8db7-ec4b1aefae4e",
+    "qty" : 20
+}
+
+###
+POST http://localhost:3000/api/orders
+
+### 
+
+GET http://localhost:3000/api/orders
+
+### 
+GET http://localhost:3000/api/products
+
+###   
+PATCH http://localhost:3000/api/orders/9e48215e-38a4-449d-9a0b-86c60d025ef5/cancel

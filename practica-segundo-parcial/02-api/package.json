@@ -1,0 +1,15 @@
+{
+  "name": "canchas_futbol",
+  "version": "1.0.0",
+  "description": "api para gestionar alquileres de canchas de futbol",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Pablo Bolanio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "joi": "^18.0.1"
+  }
+}
