@@ -1,0 +1,62 @@
+{
+  "automatons": [
+    {
+      "id": "8f0dc514-a97c-4c94-a3fa-b950a61c5eb5",
+      "modelName": "Robotito3000",
+      "level": 1,
+      "energy": 70,
+      "xp": 0,
+      "components": [
+        {
+          "name": "Masajeador",
+          "efficiency": 40
+        },
+        {
+          "name": "RompeTrastes",
+          "efficiency": 80
+        }
+      ],
+      "protocols": [
+        "Masajista",
+        "Autodestruccion"
+      ]
+    },
+    {
+      "id": "1ad83c71-3965-42da-a0d1-655995f8db81",
+      "modelName": "Robotito5000",
+      "level": 1,
+      "energy": 100,
+      "xp": 0,
+      "components": [
+        {
+          "name": "Loquito",
+          "efficiency": 70
+        }
+      ],
+      "protocols": [
+        "Locazo",
+        "Autodestruccion"
+      ]
+    },
+    {
+      "id": "6559d891-9b06-47a6-bda4-f0ab339e1f51",
+      "modelName": "Robotito5000",
+      "level": 1,
+      "energy": 100,
+      "xp": 0,
+      "components": [
+        {
+          "name": "Loquito",
+          "efficiency": 70
+        }
+      ],
+      "protocols": [
+        "Locazo",
+        "Autodestruccion"
+      ]
+    }
+  ],
+  "missions": [],
+  "battles": [],
+  "attempts": []
+}

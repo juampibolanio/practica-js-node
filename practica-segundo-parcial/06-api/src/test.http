@@ -1,0 +1,74 @@
+GET http://localhost:3000/alchemists
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+
+###
+POST http://localhost:3000/alchemists
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+Content-Type: application/json
+
+{
+    "name": "Marco Juan",
+    "affinities": ["Inteligente", "Atento"],
+    "catalysts": [{"name": "elPepino", "potency": 80}]
+}
+###
+PATCH http://localhost:3000/alchemists/44bf4dfc-d669-463f-8616-26a0ba4a5510/energy
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+Content-Type: application/json
+
+{
+    "energy": 120
+}
+
+### 
+PATCH http://localhost:3000/alchemists/44bf4dfc-d669-463f-8616-26a0ba4a5510/catalysts
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+Content-Type: application/json
+
+{
+    "action": "add",
+    "catalysts": [{"name": "catalizador de prueba", "potency": 50}]
+}
+###
+PATCH http://localhost:3000/alchemists/44bf4dfc-d669-463f-8616-26a0ba4a5510/catalysts
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+Content-Type: application/json
+
+{
+    "action": "delete",
+    "catalystName": "catalizador de prueba"
+}
+
+###
+GET http://localhost:3000/trials
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+
+###
+POST http://localhost:3000/trials
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+Content-Type: application/json
+
+{
+    "title": "Prueba de H2O",
+    "difficulty": 10,
+    "energyCost": 40,
+    "rewardFormula": "difficulty * 12 + energyCost * 3",
+    "requiredAffinity": "Inteligente"
+}
+###
+POST http://localhost:3000/trials/38d4d696-6d44-47ff-a006-0994904f2b42/attempt/44bf4dfc-d669-463f-8616-26a0ba4a5510
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+
+
+### 
+GET http://localhost:3000/trials/attempts
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+
+
+### 
+GET http://localhost:3000/duels
+Authorization: Bearer asdasd-343434-asdasdasd-4545454
+
+### 
+POST http://localhost:3000/duels/44bf4dfc-d669-463f-8616-26a0ba4a5510/duel/c5061e3a-39b5-40af-9bbb-3eeb8768dd83
+Authorization: Bearer asdasd-343434-asdasdasd-4545454

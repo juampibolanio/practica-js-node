@@ -1,0 +1,163 @@
+{
+  "alchemists": [
+    {
+      "id": "44bf4dfc-d669-463f-8616-26a0ba4a5510",
+      "name": "Juan Jose",
+      "rank": 4,
+      "xp": 300,
+      "energy": 85,
+      "affinities": [
+        "Inteligente",
+        "Atento"
+      ],
+      "catalysts": [
+        {
+          "name": "superduperCat",
+          "potency": 80
+        },
+        {
+          "name": "catalizador de prueba",
+          "potency": 50
+        }
+      ]
+    },
+    {
+      "id": "c5061e3a-39b5-40af-9bbb-3eeb8768dd83",
+      "name": "Marco Juan",
+      "rank": 1,
+      "xp": 360,
+      "energy": 85,
+      "affinities": [
+        "Inteligente",
+        "Atento"
+      ],
+      "catalysts": [
+        {
+          "name": "elPepino",
+          "potency": 80
+        }
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "38d4d696-6d44-47ff-a006-0994904f2b42",
+      "title": "Prueba de H2O",
+      "difficulty": 10,
+      "energyCost": 40,
+      "rewardFormula": "difficulty * 12 + energyCost * 3",
+      "requiredAffinity": "Inteligente"
+    }
+  ],
+  "duels": [
+    {
+      "id": "a615c125-2ad3-49b4-a2f4-0fecffb4bd96",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "121[object Object]50",
+      "powerAlchemistB": "121[object Object]",
+      "timestamp": "2025-11-17T17:16:35.614Z"
+    },
+    {
+      "id": "31180f23-9add-4193-b0d1-4da67b9bb6d8",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "106[object Object]50",
+      "powerAlchemistB": "106[object Object]",
+      "timestamp": "2025-11-17T17:18:54.777Z"
+    },
+    {
+      "id": "f51e61f0-726f-4466-b541-a5e9fe442b2e",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "91[object Object]50",
+      "powerAlchemistB": "91[object Object]",
+      "timestamp": "2025-11-17T17:21:45.005Z"
+    },
+    {
+      "id": "ecff3f41-affb-4453-94fb-347a922d5200",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "76[object Object]50",
+      "powerAlchemistB": "76[object Object]",
+      "timestamp": "2025-11-17T17:24:58.699Z"
+    },
+    {
+      "id": "7bdf16f0-8dd1-4a8c-93ec-f9b87052a10a",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "61[object Object]50",
+      "powerAlchemistB": "61[object Object]",
+      "timestamp": "2025-11-17T17:32:36.435Z"
+    },
+    {
+      "id": "d7f7563d-41a2-4c67-b408-ff8198b3da11",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Marco Juan",
+      "powerAlchemistA": "106[object Object]50",
+      "powerAlchemistB": "46[object Object]",
+      "timestamp": "2025-11-17T17:32:50.187Z"
+    },
+    {
+      "id": "eb0d65a9-4672-403f-93c6-2e7266c27aa4",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "131[object Object]50",
+      "powerAlchemistB": "131[object Object]",
+      "timestamp": "2025-11-17T17:39:22.888Z"
+    },
+    {
+      "id": "a9b9f686-18c3-4dd7-8885-c34aaf191145",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "176[object Object]50",
+      "powerAlchemistB": "116[object Object]",
+      "timestamp": "2025-11-17T17:42:13.461Z"
+    },
+    {
+      "id": "e6bc8705-1a24-4c44-b3b8-b0730b881853",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "221[object Object]50",
+      "powerAlchemistB": "101[object Object]",
+      "timestamp": "2025-11-17T17:45:00.110Z"
+    },
+    {
+      "id": "ecffaebd-5f45-4fcd-9edf-e5334e34a896",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Marco Juan",
+      "powerAlchemistA": "266[object Object]50",
+      "powerAlchemistB": "86[object Object]",
+      "xpGained": 180,
+      "timestamp": "2025-11-17T17:47:52.711Z"
+    },
+    {
+      "id": "345d6fc2-cfcb-42df-8d7c-db5d5f2bac1b",
+      "alchemistA": "Juan Jose",
+      "alchemistB": "Marco Juan",
+      "winner": "Juan Jose",
+      "powerAlchemistA": "341[object Object]50",
+      "powerAlchemistB": "221[object Object]",
+      "xpGained": 180,
+      "timestamp": "2025-11-17T17:53:20.583Z"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "e429592d-f026-4d9e-9715-7278fcf0c0ec",
+      "idAlchemist": "44bf4dfc-d669-463f-8616-26a0ba4a5510",
+      "idTrial": "38d4d696-6d44-47ff-a006-0994904f2b42",
+      "status": "failed"
+    }
+  ]
+}
