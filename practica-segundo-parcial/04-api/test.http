@@ -1,0 +1,92 @@
+GET http://localhost:3000/guardians
+
+### 
+POST http://localhost:3000/guardians
+Content-Type: application/json
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+
+{
+  "name": "Aldur",
+  "skills": ["fuego", "estrategia"],
+  "items": [
+    { "name": "Báculo Ígneo", "power": 15 }
+  ]
+}
+
+### 
+POST http://localhost:3000/guardians
+Content-Type: application/json
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+
+{
+  "name": "Lyra",
+  "skills": ["agua"],
+  "items": [
+    { "name": "Orbe Marino", "power": 10 }
+  ]
+}
+
+### 
+PATCH http://localhost:3000/guardians/359077ff-0ba8-4b28-b4c9-479c61dc070a/energy
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+Content-Type: application/json
+
+{
+  "energy": 80
+}
+
+### 
+PATCH http://localhost:3000/guardians/359077ff-0ba8-4b28-b4c9-479c61dc070a/items
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+Content-Type: application/json
+
+{ 
+  "action" : "add",
+  "items": [{ "name": "Amuleto de Ceniza", "power": 7 }]
+}
+
+### 
+PATCH http://localhost:3000/guardians/359077ff-0ba8-4b28-b4c9-479c61dc070a/items
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+Content-Type: application/json
+
+{ 
+  "action" : "remove",
+  "items": [{ }],
+  "itemName": "Amuleto de Ceniza"
+}
+
+###
+GET http://localhost:3000/challenges/
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+
+###
+POST http://localhost:3000/challenges
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+Content-Type: application/json
+
+{
+  "title": "Prueba del Fénix",
+  "difficulty": 5,
+  "energyCost": 20,
+  "rewardFormula": "difficulty * 8 + energyCost * 2",
+  "requiredSkill": "fuego"
+}
+
+###
+POST http://localhost:3000/challenges
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds
+Content-Type: application/json
+
+{
+  "title": "Mar del Caos",
+  "difficulty": 8,
+  "energyCost": 25,
+  "rewardFormula": "difficulty^2 + energyCost",
+  "requiredSkill": "agua"
+}
+
+###  
+
+POST http://localhost:3000/challenges/ee8d6dd0-0007-4d57-8154-8fdd651ed056/attempt/a76a0a09-d300-4512-addf-8778049b1e29
+Authorization: Bearer asda-3443-2fsdf-fef3-4343-sds

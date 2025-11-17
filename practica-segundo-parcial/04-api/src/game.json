@@ -1,0 +1,79 @@
+{
+  "guardians": [
+    {
+      "id": "359077ff-0ba8-4b28-b4c9-479c61dc070a",
+      "name": "Aldur",
+      "level": 7,
+      "xp": 0,
+      "energy": 80,
+      "skills": [
+        "fuego",
+        "estrategia"
+      ],
+      "items": [
+        {
+          "name": "Báculo Ígneo",
+          "power": 15
+        }
+      ]
+    },
+    {
+      "id": "a76a0a09-d300-4512-addf-8778049b1e29",
+      "name": "Lyra",
+      "level": 1,
+      "xp": 0,
+      "energy": -5,
+      "skills": [
+        "agua"
+      ],
+      "items": [
+        {
+          "name": "Orbe Marino",
+          "power": 10
+        }
+      ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "ee8d6dd0-0007-4d57-8154-8fdd651ed056",
+      "title": "Prueba del Fénix",
+      "difficulty": 5,
+      "energyCost": 20,
+      "rewardFormula": "difficulty * 8 + energyCost * 2",
+      "requiredSkill": "fuego"
+    },
+    {
+      "id": "03987955-f2c7-4a96-b049-c28a91183b13",
+      "title": "Mar del Caos",
+      "difficulty": 2,
+      "energyCost": 25,
+      "rewardFormula": "difficulty^2 + energyCost",
+      "requiredSkill": "agua"
+    }
+  ],
+  "duels": [],
+  "challengesAttempts": [
+    {
+      "id": "085a6535-174e-4f5c-a7ef-0bbeeda33cac",
+      "guardianId": "a76a0a09-d300-4512-addf-8778049b1e29",
+      "challengeId": "ee8d6dd0-0007-4d57-8154-8fdd651ed056",
+      "state": "failed",
+      "xpGained": 0
+    },
+    {
+      "id": "da1a8583-560d-4092-aa86-9a4e4c746994",
+      "guardianId": "a76a0a09-d300-4512-addf-8778049b1e29",
+      "challengeId": "ee8d6dd0-0007-4d57-8154-8fdd651ed056",
+      "state": "failed",
+      "xpGained": 80
+    },
+    {
+      "id": "f017bf73-fae8-476d-84bb-37f1c40587a1",
+      "guardianId": "a76a0a09-d300-4512-addf-8778049b1e29",
+      "challengeId": "ee8d6dd0-0007-4d57-8154-8fdd651ed056",
+      "state": "failed",
+      "xpGained": 0
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+GET http://localhost:3000/automatons
+Authorization: Bearer asdasd-3235-asdas-454545
+
+###
+POST http://localhost:3000/automatons
+Authorization: Bearer asdasd-3235-asdas-454545
+Content-Type: application/json
+
+{
+    "modelName": "Robotito3000",
+    "components": [
+        {
+            "name": "Masajeador",
+            "efficiency": 40
+        }
+    ],
+    "protocols": ["Masajista", "Autodestruccion"]
+}
+###
+POST http://localhost:3000/automatons
+Authorization: Bearer asdasd-3235-asdas-454545
+Content-Type: application/json
+
+{
+    "modelName": "Robotito5000",
+    "components": [
+        {
+            "name": "Loquito",
+            "efficiency": 70
+        }
+    ],
+    "protocols": ["Locazo", "Autodestruccion"]
+}
+###
+PATCH http://localhost:3000/automatons/8f0dc514-a97c-4c94-a3fa-b950a61c5eb5/energy
+Authorization: Bearer asdasd-3235-asdas-454545
+Content-Type: application/json
+
+{
+    "energy": 70
+}
+###
+PATCH http://localhost:3000/automatons/8f0dc514-a97c-4c94-a3fa-b950a61c5eb5/components
+Authorization: Bearer asdasd-3235-asdas-454545
+Content-Type: application/json
+
+{
+    "action": "remove",
+    "componentName" : "RompeTrastes"
+}

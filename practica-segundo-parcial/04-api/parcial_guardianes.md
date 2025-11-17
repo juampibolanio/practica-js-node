@@ -34,7 +34,7 @@ Toda la información se almacenará en un archivo llamado `game.json` con estruc
 
 ## 2. Reglas del Sistema
 
-### 2.1 Guardianes
+### 2.1 Guardianes X
 
 Un Guardián posee:
 
@@ -46,7 +46,7 @@ Un Guardián posee:
 - skills (array de palabras)  
 - items (array de objetos { name, power })
 
-### 2.2 Fórmula de Nivel
+### 2.2 Fórmula de Nivel X
 
 Cada vez que la XP de un guardián cambie, se debe evaluar:
 
@@ -60,7 +60,7 @@ Si xp >= (level * 75):
 
 Pueden ocurrir múltiples subidas de nivel si la XP es suficiente.
 
-### 2.3 Desafíos
+### 2.3 Desafíos X
 
 Cada desafío posee:
 
@@ -80,7 +80,7 @@ La fórmula debe evaluarse de forma segura. No se permite usar eval.
 
 ---
 
-## 3. Intento de Desafío
+## 3. Intento de Desafío X
 
 Cuando un guardián intenta un desafío:
 
@@ -108,7 +108,7 @@ Cuando un guardián intenta un desafío:
 
 ---
 
-## 4. Sistema de Duelos
+## 4. Sistema de Duelos ----
 
 Un duelo enfrenta a dos guardianes utilizando la siguiente fórmula de poder lógico:
 
@@ -174,16 +174,16 @@ No se permite duplicar lógica entre controllers y services.
 
 #### Guardianes
 
-- POST `/guardians`  
-- GET `/guardians` (con filtros opcionales: skill, fragmento de nombre, rango de nivel)  
-- PATCH `/guardians/:id/energy`  
-- PATCH `/guardians/:id/items` (agregar o quitar items)
+- POST `/guardians`  X
+- GET `/guardians` (con filtros opcionales: skill, fragmento de nombre, rango de nivel)   X
+- PATCH `/guardians/:id/energy`   X
+- PATCH `/guardians/:id/items` (agregar o quitar items) X
 
 #### Desafíos
 
-- POST `/challenges`  
-- GET `/challenges` (con filtros)  
-- POST `/challenges/:challengeId/attempt/:guardianId`
+- POST `/challenges`  X
+- GET `/challenges` (con filtros)  X
+- POST `/challenges/:challengeId/attempt/:guardianId`X
 
 #### Duelos
 
