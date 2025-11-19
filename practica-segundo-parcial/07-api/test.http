@@ -1,0 +1,44 @@
+GET http://localhost:3000/engineers
+Authorization: Bearer asfgdfgdfg-23235345-asdasfasf
+
+###
+POST http://localhost:3000/engineers
+Authorization: Bearer asfgdfgdfg-23235345-asdasfasf
+Content-Type: application/json
+
+{
+    "name": "Jorgito Lopez",
+    "skillset": ["Inteligente", "Capaz"]
+}
+###
+PATCH http://localhost:3000/engineers/034bacc4-f10c-49d3-bb1a-8a195351f8b5/xp
+Authorization: Bearer asfgdfgdfg-23235345-asdasfasf
+Content-Type: application/json
+
+{
+    "xp" : 200
+}
+###
+GET http://localhost:3000/robots
+Authorization: Bearer asfgdfgdfg-23235345-asdasfasf
+
+### 
+POST http://localhost:3000/robots
+Authorization: Bearer asfgdfgdfg-23235345-asdasfasf
+Content-Type: application/json
+
+{
+    "model": "ADA8",
+    "powerBase": 25,
+    "components": [{ "name": "Hierro", "boost": 50}]
+}
+
+###   
+PATCH http://localhost:3000/robots/3b8a7741-a0e1-4a07-9d15-68f5ab8b7f4c/components
+Authorization: Bearer asfgdfgdfg-23235345-asdasfasf
+Content-Type: application/json
+
+{
+    "action": "add",
+    "items": [{ "name": "Diamante", "boost": 70 }]
+}

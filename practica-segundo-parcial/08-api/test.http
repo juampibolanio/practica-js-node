@@ -1,0 +1,83 @@
+GET http://localhost:3000/guardians
+Authorization: Bearer dasdasdas-4234234-asdadas
+
+###
+
+POST http://localhost:3000/guardians
+Authorization: Bearer dasdasdas-4234234-asdadas
+Content-Type: application/json
+
+{
+    "name": "pepeMuj",
+    "skills": ["Fuerte", "Rapido"],
+    "items": [{ "name" : "Escopeta", "power": 10 }]
+}
+
+###
+PATCH http://localhost:3000/guardians/d3c9795c-bc9b-400f-adfc-458c0f7650f2/energy
+Authorization: Bearer dasdasdas-4234234-asdadas
+Content-Type: application/json
+
+{
+    "energy": 80
+}
+
+###
+PATCH http://localhost:3000/guardians/d3c9795c-bc9b-400f-adfc-458c0f7650f2/items
+Authorization: Bearer dasdasdas-4234234-asdadas
+Content-Type: application/json
+
+{
+    "action": "add",
+    "items": [
+        {
+            "name": "lanzamisiles3000",
+            "power": 60
+        }
+    ]
+}
+
+###   
+PATCH http://localhost:3000/guardians/d3c9795c-bc9b-400f-adfc-458c0f7650f2/items
+Authorization: Bearer dasdasdas-4234234-asdadas
+Content-Type: application/json
+
+{
+    "action": "remove",
+    "itemName": "lanzamisiles3000"
+}
+
+###
+GET http://localhost:3000/challenges
+Authorization: Bearer dasdasdas-4234234-asdadas
+
+###
+POST http://localhost:3000/challenges
+Authorization: Bearer dasdasdas-4234234-asdadas
+Content-Type: application/json
+
+{
+    "title": "TestFuerza",
+    "difficulty": 1,
+    "energyCost": 5,
+    "rewardFormula": "difficulty * 1 + energyCost * 1",
+    "requiredSkill": "Fuerte"
+}
+###
+POST http://localhost:3000/challenges/2e4aeea8-8349-479f-b548-a6b165fb326e/attempt/d3c9795c-bc9b-400f-adfc-458c0f7650f2
+Authorization: Bearer dasdasdas-4234234-asdadas
+
+###
+
+GET http://localhost:3000/duels
+Authorization: Bearer dasdasdas-4234234-asdadas
+
+###  
+POST http://localhost:3000/duels
+Authorization: Bearer dasdasdas-4234234-asdadas
+Content-Type: application/json
+
+{
+    "idGuardianA" : "d3c9795c-bc9b-400f-adfc-458c0f7650f2",
+    "idGuardianB" : "13cf3b24-93ec-425f-be40-c8ee15c300cc"
+}

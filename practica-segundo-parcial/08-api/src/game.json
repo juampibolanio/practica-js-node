@@ -1,0 +1,86 @@
+{
+  "guardians": [
+    {
+      "id": "d3c9795c-bc9b-400f-adfc-458c0f7650f2",
+      "name": "elvisBot",
+      "level": 1,
+      "xp": 12,
+      "energy": 15,
+      "skills": [
+        "Fuerte",
+        "Habil"
+      ],
+      "items": [
+        {
+          "name": "SuperEspada",
+          "power": 40
+        },
+        {
+          "name": "lanzamisiles3000",
+          "power": 60
+        }
+      ]
+    },
+    {
+      "id": "13cf3b24-93ec-425f-be40-c8ee15c300cc",
+      "name": "pepeMuj",
+      "level": 1,
+      "xp": 0,
+      "energy": 70,
+      "skills": [
+        "Fuerte",
+        "Rapido"
+      ],
+      "items": [
+        {
+          "name": "Escopeta",
+          "power": 10
+        }
+      ]
+    }
+  ],
+  "challenges": [
+    {
+      "id": "2b72814f-a657-4ab7-bb56-5d7eef6927bb",
+      "title": "FuerzaTest",
+      "difficulty": 5,
+      "energyCost": 10,
+      "rewardFormula": "difficulty * 8 + energyCost * 2",
+      "requiredSkill": "Fuerte"
+    },
+    {
+      "id": "2e4aeea8-8349-479f-b548-a6b165fb326e",
+      "title": "TestFuerza",
+      "difficulty": 1,
+      "energyCost": 5,
+      "rewardFormula": "difficulty * 1 + energyCost * 1",
+      "requiredSkill": "Fuerte"
+    }
+  ],
+  "duels": [
+    {
+      "id": "eacf82e7-8f6c-45bf-b639-8b5efd7fde3e",
+      "guardianA": "d3c9795c-bc9b-400f-adfc-458c0f7650f2",
+      "guardianB": "13cf3b24-93ec-425f-be40-c8ee15c300cc",
+      "winner": "13cf3b24-93ec-425f-be40-c8ee15c300cc",
+      "powerGuardianA": "29.4[object Object]60",
+      "powerGuardianB": "82[object Object]",
+      "timestamp": "2025-11-19T01:35:34.330Z"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "d2a0568e-8f4a-480f-97d2-031ffac513ea",
+      "status": "failed",
+      "guardianId": "d3c9795c-bc9b-400f-adfc-458c0f7650f2",
+      "challengeId": "2b72814f-a657-4ab7-bb56-5d7eef6927bb",
+      "penalization": 15
+    },
+    {
+      "id": "dd5157ba-e556-41f2-991d-7ee97726647e",
+      "status": "success",
+      "guardianId": "d3c9795c-bc9b-400f-adfc-458c0f7650f2",
+      "challengeId": "2e4aeea8-8349-479f-b548-a6b165fb326e"
+    }
+  ]
+}

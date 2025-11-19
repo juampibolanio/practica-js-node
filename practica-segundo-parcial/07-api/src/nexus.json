@@ -1,0 +1,35 @@
+{
+  "engineers": [
+    {
+      "id": "034bacc4-f10c-49d3-bb1a-8a195351f8b5",
+      "name": "Jorgito Lopez",
+      "level": 1,
+      "xp": 200,
+      "skillset": [
+        "Inteligente",
+        "Capaz"
+      ],
+      "robots": []
+    }
+  ],
+  "robots": [
+    {
+      "id": "3b8a7741-a0e1-4a07-9d15-68f5ab8b7f4c",
+      "model": "ADA8",
+      "durability": 100,
+      "powerBase": 25,
+      "components": [
+        {
+          "name": "Hierro",
+          "boost": 50
+        },
+        {
+          "name": "Diamante",
+          "boost": 70
+        }
+      ]
+    }
+  ],
+  "missions": [],
+  "combats": []
+}
