@@ -22,4 +22,9 @@ const updateArtifactsSchema = Joi.object({
     artifactName: Joi.string()
 })
 
-module.exports = { createWarriorSchema, updateArtifactsSchema, updateEnergySchema }
+const patchWarriorSchema = Joi.object({
+    name: Joi.string(),
+    affinities: Joi.array().items(Joi.string()),
+})
+
+module.exports = { createWarriorSchema, updateArtifactsSchema, updateEnergySchema, patchWarriorSchema }

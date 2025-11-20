@@ -1,0 +1,44 @@
+GET http://localhost:3000/smiths
+Authorization: asdasdas-42425345-asdasdasd
+
+###
+
+POST http://localhost:3000/smiths
+Authorization: asdasdas-42425345-asdasdasd
+Content-Type: application/json
+
+{
+    "name": "pepitoPistolero",
+    "runes": ["Run1", "Run2"],
+    "crystals": [{ "name": "cry1", "power": 30}, { "name": "cry2", "power": 50}]
+}
+###
+PATCH http://localhost:3000/smiths/6fd7a79f-7009-45ce-84bb-56b8eec3166d/energy
+Authorization: asdasdas-42425345-asdasdasd
+Content-Type: application/json
+
+{
+    "energy": 50
+}
+###
+PATCH http://localhost:3000/smiths/6fd7a79f-7009-45ce-84bb-56b8eec3166d/crystals
+Authorization: asdasdas-42425345-asdasdasd
+Content-Type: application/json
+
+{
+    "action": "add",
+    "crystals": [{"name": "cry4", "power": 50}]
+}
+###
+PATCH http://localhost:3000/smiths/6fd7a79f-7009-45ce-84bb-56b8eec3166d/crystals
+Authorization: asdasdas-42425345-asdasdasd
+Content-Type: application/json
+
+{
+    "action": "remove",
+    "crystalName": "cry1"
+}
+
+###
+DELETE http://localhost:3000/smiths/21e9d63b-7c1c-42fa-a633-e6130d91a4c7
+Authorization: asdasdas-42425345-asdasdasd

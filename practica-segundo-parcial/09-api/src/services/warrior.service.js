@@ -125,4 +125,26 @@ async function removeWarrior(id) {
     return warriorDeleted;
 }
 
-module.exports = { getAll, createWarrior, updateArtifacts, updateEnergy, removeWarrior, upLevel }
+async function patchWarrior(id, data) {
+    const spirit = await repository.loadSpirit();
+
+    const warriorIndex = spirit.warriors.findIndex(w => w.id == id);
+
+    if (warriorIndex === -1) {
+        throw new NotFoundError("Warrior not found");
+    }
+
+    const warrior = spirit.warriors[warriorIndex];
+
+    const updatedWarrior = {
+        ...warrior,
+        ...data,
+        id: warrior.id,
+    }
+    spirit.warriors[warriorIndex] = updatedWarrior;
+    await repository.saveSpirit(spirit);
+    return updatedWarrior;
+}
+
+
+module.exports = { getAll, createWarrior, updateArtifacts, updateEnergy, removeWarrior, upLevel, patchWarrior }

@@ -49,3 +49,13 @@ exports.removeWarrior = async (req, res, next) => {
         next(error);
     }
 }
+
+exports.patchWarrior = async (req, res, next) => {
+    try {
+        const id = req.params.id;
+        const updatedWarrior = await service.patchWarrior(id, req.body);
+        return Response.success(res, updatedWarrior, HttpStatus.OK);
+    } catch (error) {
+        next(error);
+    }
+}
