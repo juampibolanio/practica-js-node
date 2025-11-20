@@ -1,0 +1,226 @@
+{
+  "warriors": [
+    {
+      "id": "726db60e-3520-4c1f-ab01-12b214438637",
+      "name": "MarioPRES",
+      "rank": 3,
+      "xp": 114,
+      "energy": 88,
+      "affinities": [
+        "Nadar",
+        "Leer"
+      ],
+      "artifacts": [
+        {
+          "name": "Espada15ga",
+          "power": 30
+        },
+        {
+          "name": "lanzacohetes",
+          "power": 50
+        }
+      ]
+    },
+    {
+      "id": "274755ed-9846-46e2-b684-5fb48281aaa5",
+      "name": "Pepito",
+      "rank": 1,
+      "xp": 0,
+      "energy": 88,
+      "affinities": [
+        "Contar",
+        "Leer"
+      ],
+      "artifacts": [
+        {
+          "name": "SuperDuperWord",
+          "power": 90
+        }
+      ]
+    }
+  ],
+  "trials": [
+    {
+      "id": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "title": "Test Force",
+      "difficulty": 2,
+      "energyCost": 10,
+      "rewardFormula": "difficulty^2 + energyCost",
+      "requiredAffinity": "Leer"
+    }
+  ],
+  "duels": [
+    {
+      "id": "41fa7ec1-a08c-403b-91ee-4b110590e5a4",
+      "warriorA": "726db60e-3520-4c1f-ab01-12b214438637",
+      "powerWarriorA": "133.5[object Object]50",
+      "warriorB": "274755ed-9846-46e2-b684-5fb48281aaa5",
+      "powerWarriorB": "97[object Object]",
+      "winner": "274755ed-9846-46e2-b684-5fb48281aaa5",
+      "timestamp": "2025-11-19T23:59:41.250Z"
+    },
+    {
+      "id": "5ee4879c-32a5-4207-9c94-135ef56031fd",
+      "warriorA": "726db60e-3520-4c1f-ab01-12b214438637",
+      "powerWarriorA": "125.5[object Object]50",
+      "warriorB": "274755ed-9846-46e2-b684-5fb48281aaa5",
+      "powerWarriorB": "89[object Object]",
+      "winner": "274755ed-9846-46e2-b684-5fb48281aaa5",
+      "timestamp": "2025-11-20T00:05:20.375Z"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "a2c4cfb3-f9cd-4585-ae11-578e14e04f19",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:05:54.295Z",
+      "xpGained": 14
+    },
+    {
+      "id": "246ff40d-52a9-4d2a-9ec3-1a3b7147c0a4",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:03.613Z",
+      "xpGained": 14
+    },
+    {
+      "id": "ad252309-ff0e-495a-bb19-7c8a32917899",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:04.308Z",
+      "xpGained": 14
+    },
+    {
+      "id": "a624e3d0-af8f-4426-9f4a-3c3d3629acf2",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:05.292Z",
+      "xpGained": 14
+    },
+    {
+      "id": "51744307-dc18-4c38-b74e-0ed13af7f6a4",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:14.145Z",
+      "xpGained": 14
+    },
+    {
+      "id": "e33be1d9-cd08-441e-bd8a-2a3e57b96048",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:14.347Z",
+      "xpGained": 14
+    },
+    {
+      "id": "18face09-ba1a-4594-b145-bb9bf14332d9",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:14.446Z",
+      "xpGained": 14
+    },
+    {
+      "id": "96026496-ef91-4dd3-8e5c-a07a292804d6",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:14.892Z",
+      "xpGained": 14
+    },
+    {
+      "id": "0d0e3987-9896-4b61-a2b6-09e028f9d954",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:15.034Z",
+      "xpGained": 14
+    },
+    {
+      "id": "bdf455b4-19c6-40e4-b5f8-4186be7ae2b4",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:23.011Z",
+      "xpGained": 14
+    },
+    {
+      "id": "9fa16168-f3d6-463d-bb60-362749f4bd68",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:23.446Z",
+      "xpGained": 14
+    },
+    {
+      "id": "d92b8d69-5cb4-4109-9a9b-8cc8d5d6febc",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:23.570Z",
+      "xpGained": 14
+    },
+    {
+      "id": "7c0fd558-5712-40f8-a9f1-a0562b9693f1",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:23.747Z",
+      "xpGained": 14
+    },
+    {
+      "id": "3b994568-e837-4ee1-b02e-73c379cfc311",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:23.863Z",
+      "xpGained": 14
+    },
+    {
+      "id": "648f54c0-73cf-4f6b-bd20-aa28b79b9c71",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:24.054Z",
+      "xpGained": 14
+    },
+    {
+      "id": "8547a7cb-154e-4656-a412-eca394ff67ef",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:24.520Z",
+      "xpGained": 14
+    },
+    {
+      "id": "c7f94586-f32d-4692-bacd-df25a8cc966c",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:24.647Z",
+      "xpGained": 14
+    },
+    {
+      "id": "acdf87cc-4e58-42f3-9b1a-aa63f937aaf9",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:06:24.719Z",
+      "xpGained": 14
+    },
+    {
+      "id": "2b5bdb14-0120-40a6-bea1-766d3e32e64d",
+      "status": "success",
+      "idWarrior": "726db60e-3520-4c1f-ab01-12b214438637",
+      "idTrial": "530bbf9d-84e2-4039-a659-5f1ca7c6c89c",
+      "timestamp": "2025-11-19T20:11:06.414Z",
+      "xpGained": 14
+    }
+  ]
+}

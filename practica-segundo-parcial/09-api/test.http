@@ -1,0 +1,71 @@
+GET http://localhost:3000/warriors
+Authorization: asdasdas-34234234-asdasda
+
+###
+POST http://localhost:3000/warriors
+Authorization: asdasdas-34234234-asdasda
+Content-Type: application/json
+
+{
+    "name": "Pepito",
+    "affinities": ["Contar", "Leer"],
+    "artifacts": [{ "name": "SuperDuperWord", "power": 90}]
+}
+###
+PATCH http://localhost:3000/warriors/726db60e-3520-4c1f-ab01-12b214438637/energy
+Authorization: asdasdas-34234234-asdasda
+Content-Type: application/json
+
+{
+    "energy": 120
+}
+###
+PATCH http://localhost:3000/warriors/726db60e-3520-4c1f-ab01-12b214438637/artifacts
+Authorization: asdasdas-34234234-asdasda
+Content-Type: application/json
+
+{
+    "action": "add",
+    "artifacts": [{ "name": "lanzacohetes", "power": 50}]
+}
+###
+PATCH http://localhost:3000/warriors/726db60e-3520-4c1f-ab01-12b214438637/artifacts
+Authorization: asdasdas-34234234-asdasda
+Content-Type: application/json
+
+{
+    "action": "remove",
+    "artifactName": "lanzacohetes"
+}
+
+###  
+
+GET http://localhost:3000/trials
+Authorization: asdasdas-34234234-asdasda
+
+###  
+
+POST http://localhost:3000/trials
+Authorization: asdasdas-34234234-asdasda
+Content-Type: application/json
+
+{
+    "title": "Test Force",
+    "difficulty": 2,
+    "energyCost": 10,
+    "rewardFormula": "difficulty^2 + energyCost",
+    "requiredAffinity": "Leer"
+}
+###
+
+POST http://localhost:3000/trials/726db60e-3520-4c1f-ab01-12b214438637/attempt/530bbf9d-84e2-4039-a659-5f1ca7c6c89c
+Authorization: asdasdas-34234234-asdasda
+
+### 
+GET http://localhost:3000/duels
+Authorization: asdasdas-34234234-asdasda
+
+### 
+POST http://localhost:3000/duels/726db60e-3520-4c1f-ab01-12b214438637/duel/274755ed-9846-46e2-b684-5fb48281aaa5
+Authorization: asdasdas-34234234-asdasda
+
